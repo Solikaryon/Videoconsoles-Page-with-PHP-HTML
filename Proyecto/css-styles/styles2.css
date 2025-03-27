@@ -1,0 +1,171 @@
+code {
+  background-color: aliceblue;
+}
+
+.box {
+  display: flex;
+  gap: 5px;
+  border-style: dashed;
+}
+
+.box div {
+  background-color: cornsilk;
+  border-style: solid;
+  border-color: red;
+  border-radius: 5px;
+  border-width: 3px;
+  padding: 3px;
+}
+
+.box_dos {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 5px;
+  border-style: dotted;
+}
+
+.box_dos div {
+  background-color: cornsilk;
+  border-style: solid;
+  border-color: red;
+  border-radius: 5px;
+  border-width: 3px;
+  padding: 3px;
+}
+
+.box_3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  border-style: dotted;
+}
+
+.box_3 div {
+  background-color: cornsilk;
+  border-style: solid;
+  border-color: red;
+  border-radius: 5px;
+  border-width: 3px;
+  padding: 3px 100px;
+}
+
+.box_3 p {
+  margin: 0;
+  text-align: right;
+}
+
+.box_4 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  border-style: dotted;
+}
+
+.box_4 div {
+  background-color: cornsilk;
+  border-style: solid;
+  border-color: red;
+  border-radius: 5px;
+  border-width: 3px;
+  padding: 3px 100px;
+}
+
+.box_5 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  border-style: dotted;
+}
+
+.box_5 :first-child {
+  width: 150px;
+}
+
+.box_5>* {
+  /* So .container > * means all immediate children of container class. */
+  flex: 0 0 auto;
+}
+
+.box_5 div {
+  background-color: cornsilk;
+  border-style: solid;
+  border-color: red;
+  border-radius: 5px;
+  border-width: 3px;
+}
+
+.alinear-img {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  text-align: center;
+}
+
+.item {
+  flex-grow: 1;
+  height: 100px;
+  background-color: #ff7300;
+  border-style: solid;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.item+.item {
+  margin-left: 2%;
+}
+
+.container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+
+  list-style: none;
+  margin: 0;
+  background: #ff7300;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+.navigation a:hover {
+  background: #c19c15;
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}

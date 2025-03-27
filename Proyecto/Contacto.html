@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clientes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+  <link rel="preload" href="/Proyecto/css-styles/styles.css" as="styles">
+  <link rel="stylesheet" href="/Proyecto/css-styles/styles.css">
+  <link rel="stylesheet" href="/Proyecto/css-styles/stylesflex.css">
+  <link rel="preload" href="/Proyecto/css-styles/normalize.css" as="styles">
+  <link rel="stylesheet" href="/Proyecto/css-styles/normalize.css">
+</head>
+
+<body>
+
+
+  <div class="nav-bg">
+    <nav class="navegacion-principal contenedor">
+      <a class="anima" href="/Proyecto/index.html">Inicio (Historia)</a>
+      <a class="anima" href="/Proyecto/java.html">Java (Consolas)</a>
+      <a class="anima" href="/Proyecto/Contacto.html">Contacto</a>
+    </nav>
+  </div>
+
+  <h2>
+    <center>Rellena el formulario por favor :)<center>
+  </h2>
+</body>
+
+<section class="flex-container">
+  <form class="formulario" action="registrar.php" method="post">
+        <fieldset>
+          <legend>Contáctanos llenando todos los campos</legend>
+          <div class="contenerdor-campos">
+            <div class="campo input-text">
+              <label class="campo__label" for="mensaje">Nombre</label>
+              <input class="input-text" placeholder="Nombres" type="text" name="nombre" id="nombre" required>
+            </div>
+
+            <div class="campo input-text">
+              <label class="campo__label" for="mensaje">Telefono</label>
+              <input class="input-text" placeholder="Telefono" type="tel" name="telefono" id="telefono" required>
+            </div>
+
+            <div class="campo input-text">
+              <label for="mensaje">Correo</label>
+              <input class="input-text" placeholder="email" type="email" name="correo" id="email" required>
+            </div>
+
+            <div class="campo input-text">
+              <label class="campo__label" for="mensaje">Mensaje</label>
+              <textarea  class="input-text area-text" placeholder="Escriba aqui su Mensaje" type="text" name="mensaje" id="mensaje" required></textarea>
+            </div>
+          </div>
+          <div class="enviar flex alinear-derecha">
+            <input class="boton" type="submit" value="Enviar">
+          </div>
+        </fieldset>
+      </form>
+    </section>
+
+</section>
+
+  <footer class="footer">
+    <p>Todos los derechos reservados, JELF, JEZO, ADTG y LFMB.</p>
+    <audio src="/Audio/Wii.mp3" autoplay controls loop></audio>
+  </footer>
+
+  </body>
+  <script src="/java/script.js"></script>
+</html>

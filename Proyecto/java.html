@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre mi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+  <link rel="preload" href="/Proyecto/css-styles/styles.css" as="styles">
+  <link rel="stylesheet" href="/Proyecto/css-styles/styles.css">
+  <link rel="preload" href="/Proyecto/css-styles/estilos.css" as="styles">
+  <link rel="stylesheet" href="/Proyecto/css-styles/estilos.css">
+  <link rel="preload" href="/Proyecto/css-styles/normalize.css" as="styles">
+  <link rel="stylesheet" href="/Proyecto/css-styles/normalize.css">
+</head>
+
+<body>
+  <div class="nav-bg">
+    <nav class="navegacion-principal contenedor">
+      <a class="anima" href="/Proyecto//index.html">Inicio</a>
+      <a class="anima" href="/Proyecto//java.html">Historia</a>
+      <a class="anima" href="/Proyecto//Contacto.html">Contacto</a>
+    </nav>
+  </div>
+  <body>
+    <h2>
+      <center>Historia<center>
+    </h2>
+    <div class="container3 animated">
+      <h2 class="scont animated">Linea temporal de las consolas</h2>
+      <h2>Opciones:</h2>
+      <div class="contenedor__controles">
+        <div class="contenedor__botones right">
+          <div class="etiqueta">
+            <label class="scont" for="">Color de fuente encabezados</label>
+          </div>
+          <input class="btn_rojo anima animated2 scont" onclick="rojoFcn()" type="button" value="">
+          <input class="btn_verde anima animated2 scont" onclick="verdeFcn()" type="button" value="">
+          <input class="btn_azul anima animated2 scont" onclick="azulFcn()" type="button" value="">
+          <input class="btn_blanco anima animated2 scont" onclick="blancoFcn()" type="button" value="">
+          <input class="btn_negro anima animated2 scont" onclick="negroFcn()" type="button" value="">
+          <input class="btn_morado anima animated2 scont" onclick="moradoFcn()" type="button" value="">
+          <input class="btn_dorado anima animated2 scont" onclick="doradoFcn()" type="button" value="">
+          <input class="btn_yellow anima animated2 scont" onclick="amarilloFcn()" type="button" value="">
+          <input class="btn_cyan anima animated2 scont" onclick="cyanFcn()" type="button" value="">
+          <input class="btn_pink anima animated2 scont" onclick="pinkFcn()" type="button" value="">
+          <input class="btn_orange anima animated2 scont" onclick="orangeFcn()" type="button" value="">
+          <input class="btn_st anima animated2 scont" onclick="stFcn()" type="button" value="">
+          <input class="btn_crimson anima animated2 scont" onclick="crimsonFcn()" type="button" value="">
+          <input class="btn_dlg anima animated2 scont" onclick="dlgFcn()" type="button" value="">
+        </div>
+
+        <div class="alinear__tipo-fuente mejora">
+          <label class="scont" for="">Tipo de fuente</label>
+          <select class="button input" onchange="fuenteFcn()" name="" id="fuentes">
+            <option value="0">Times New Roman</option>
+            <option value="1">Arial</option>
+            <option value="2">Helvetica</option>
+            <option value="3">Verdana</option>
+            <option value="4">Cambria</option>
+            <option value="5">Arial black</option>
+            <option value="6">Lucida Handwriting</option>
+            <option value="7">Papyrus</option>
+            <option value="8">Copperplate</option>
+            <option value="9">Garamond</option>
+            <option value="10">Monaco</option>
+          </select>
+        </div>
+        <div class="tamano__fuente alinear__tipo-fuente mejora">
+          <label class="scont" for="">Tamaño de la fuente</label>
+          <input class="button input" onchange="fontSizeFcn()" type="number" name="" id="sizeFuente" value="12">
+        </div>
+        <div class="alinear__tipo-fuente mejora">
+          <label class="scont" for="">Formato</label>
+          <select class="button input" onchange="formatosFnc()" name="" id="formatos">
+            <option value="0">Formato N1</option>
+            <option value="1">Formato N2</option>
+            <option value="2">Formato N3</option>
+            <option value="3">Formato N4</option>
+            <option value="4">Formato N5</option>
+
+          </select>
+        </div>
+        <div class="contenedor__botones right">
+          <div class="etiqueta">
+            <label class="scont" for="">Color de fuente encabezados</label>
+          </div>
+          <input class="btn_rojo anima animated2 scont" onclick="rojoFcn()" type="button" value="">
+          <input class="btn_verde anima animated2 scont" onclick="verdeFcn()" type="button" value="">
+          <input class="btn_azul anima animated2 scont" onclick="azulFcn()" type="button" value="">
+          <input class="btn_blanco anima animated2 scont" onclick="blancoFcn()" type="button" value="">
+          <input class="btn_negro anima animated2 scont" onclick="negroFcn()" type="button" value="">
+          <input class="btn_morado anima animated2 scont" onclick="moradoFcn()" type="button" value="">
+          <input class="btn_dorado anima animated2 scont" onclick="doradoFcn()" type="button" value="">
+          <input class="btn_yellow anima animated2 scont" onclick="amarilloFcn()" type="button" value="">
+          <input class="btn_cyan anima animated2 scont" onclick="cyanFcn()" type="button" value="">
+          <input class="btn_pink anima animated2 scont" onclick="pinkFcn()" type="button" value="">
+          <input class="btn_orange anima animated2 scont" onclick="orangeFcn()" type="button" value="">
+          <input class="btn_st anima animated2 scont" onclick="stFcn()" type="button" value="">
+          <input class="btn_crimson anima animated2 scont" onclick="crimsonFcn()" type="button" value="">
+          <input class="btn_dlg anima animated2 scont" onclick="dlgFcn()" type="button" value="">
+        </div>
+      </div>
+      <table class="customers">
+        <tr>
+          <th class="animated color__fuente">Consola</th>
+          <th class="animated color__fuente">Compañia/Desarrolladora</th>
+          <th class="animated color__fuente">Año</th>
+        </tr>
+        <tr>
+          <td class="animated color__fuente">Atari pong.</td>
+          <td class="animated color__fuente">Atari</td>
+          <td class="animated color__fuente">1976</td>
+        </tr>
+        <tr>
+          <td class="animated color__fuente">Tele-games pong</td>
+          <td class="animated color__fuente">Sears</td>
+          <td class="animated color__fuente">1975</td>
+        </tr>
+        <tr>
+          <td class="animated color__fuente">Gameboy</td>
+          <td class="animated color__fuente">Nintendo</td>
+          <td class="animated color__fuente">2013</td>
+        </tr>
+        <tr>
+          <td class="animated color__fuente">Dragon Age: Inquisition</td>
+          <td class="animated color__fuente">BioWare</td>
+          <td class="animated color__fuente">2014</td>
+        </tr>
+        <tr>
+          <td class="animated color__fuente">Nintendo 64</td>
+          <td class="animated color__fuente">Nintendo</td>
+          <td class="animated color__fuente">2002</td>
+        </tr>
+        <tr>
+          <td class="animated color__fuente">Nintengo Game Cube</td>
+          <td class="animated color__fuente">Nintendo</td>
+          <td class="animated color__fuente">2001</td>
+        </tr>
+        <tr>
+          <td class="animated color__fuente">Xbox</td>
+          <td class="animated color__fuente">Microsoft</td>
+          <td class="animated color__fuente">2001</td>
+        </tr>
+        <tr>
+          <td class="animated color__fuente">Play 3</td>
+          <td class="animated color__fuente">Sony</td>
+          <td class="animated color__fuente">2017</td>
+        </tr>
+        <tr>
+          <td class="animated color__fuente">Wii</td>
+          <td class="animated color__fuente">Nintendo</td>
+          <td class="animated color__fuente">2017</td>
+        </tr>
+        <tr>
+          <td class="animated color__fuente">Xbox Series X</td>
+          <td class="animated color__fuente">Microsoft</td>
+          <td class="animated color__fuente">2020</td>
+        </tr>
+      </table>
+
+    </div>
+    <div>
+      <h2 class="centrartexto scont animated">Ultimos juegos de cada consola actual</h2>
+      <div class="flexbox">
+        <p class="flextext">Switch <a  href="https://www.nintendo.com/es-mx/store/products/the-legend-of-zelda-tears-of-the-kingdom-switch/" class="flexlink anima">  
+          <img src="/Proyecto/img/TotK.png" class="flex-image anima"> </a></p>
+                <p class="flextext">Xbox <a  href="https://www.amazon.com.mx/Elden-Ring-Xbox-One-Standard/dp/B07T32W1KB/ref=asc_df_B07T32W1KB/?hvadid=451138704473&hvpos=&hvnetw=g&hvrand=11560468781971917865&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1010088&hvtargid=pla-972493542185&psc=1" class="flexlink anima">  
+          <img src="/Proyecto/img/Elder.png" class="flex-image anima"> </a></p>
+                <p class="flextext">PlayStation <a  href="https://www.amazon.com.mx/Star-Wars-Jedi-Survivor-PlayStation/dp/B0BSB5TCNB/ref=asc_df_B0BSB5TCNB/?hvadid=629922447247&hvpos=&hvnetw=g&hvrand=13106005711586277825&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1010088&hvtargid=pla-1946505698865&psc=1" class="flexlink anima">  
+          <img src="/Proyecto/img/Jedi.png" class="flex-image anima"> </a></p>
+      </div>
+    </div>
+    <h2 class="centrartexto scont animated">Perores juegos de cada consola</h2>
+    <div class="grid-container">
+      <div class="itemgrid">
+        <img class="anima" src="/Proyecto/img/Vroom.png">
+        <p>Vroom Switch</p>
+      </div>
+      <div class="itemgrid">
+        <img class="anima" src="/Proyecto/img/Ghostbusters.png">
+        <p>Ghostbusters Xbox</p>
+      </div>
+      <div class="itemgrid">
+        <img class="anima" src="/Proyecto/img/Babylons.png">
+        <p>Babylons Playstion</p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>Todos los derechos reservados, JELF, JEZO, ADTG y LFMB.</p>
+      <audio src="/Proyecto/Audio/Wii.mp3" autoplay controls loop></audio>
+    </footer>
+  </body>
+  <script src="/Proyecto/java/js.js"></script>
+
+</html>
